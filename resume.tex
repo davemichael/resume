@@ -1,0 +1,172 @@
+\documentclass[10pt]{article}
+%\documentclass[10pt,twocolumn]{article}
+\usepackage[pdftex]{hyperref}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{relsize}
+\usepackage{xspace}
+
+%How C++ is typeset in the C++ standard:
+\newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
+\newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
+
+% Set left margin - The default is 1 inch, so the following 
+% command sets a 1.25-inch left margin.
+%\setlength{\evensidemargin}{-0.25in}
+\setlength{\oddsidemargin}{-0.5in}
+
+% Set width of the text - What is left will be the right margin.
+% In this case, right margin is 8.5in - 1.25in - 6in = 1.25in.
+\setlength{\textwidth}{7in}
+%\setlength{\textwidth}{6.5in}
+
+% Set top margin - The default is apparently 1.5 inches, so the following 
+% command sets a 0.25-inch top margin.
+\setlength{\topmargin}{-1.25in}
+
+% Set height of the text - What is left will be the bottom margin.
+% In this case, bottom margin is 11in - 0.75in - 9.5in = 0.75in
+\setlength{\textheight}{10in}
+
+% Set list items to have no separation
+\setlist{nosep}
+
+% Set the beginning of a LaTeX document
+\begin{document}
+
+\begin{center}
+  %\begin{tabular}{lr}
+  \begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+  	\bf{\sc{\huge{Dave Michael}}} & (303) 630-9234 \\
+	  987 Treece St.              & \href{https://github.com/davemichael}{github.com/davemichael} \\
+	  Louisville, CO 80027        & \href{mailto:dave.a.michael@gmail.com}{dave.a.michael@gmail.com} \\
+  	\hline
+  \end{tabular*}
+\end{center}
+
+\subsection*{Objective:}  A software engineering position developing impactful technology in a team environment, with opportunities for learning, leadership, and mentoring.
+
+\subsection*{Work Experience}
+
+\noindent
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{Google} & July 2010 - Present\\
+Senior Software Engineer &\\
+\end{tabular*}
+\begin{itemize}
+\begin{item}
+	\textbf{GeoTracker Team Lead} (2015-present, TL since 2018)
+\\
+	Currently leading a team of eight software engineers responsible for GeoTracker infrastructure. GeoTracker is a platform implemented in \Cpp for clustering detections from ML models and other signals to derive knowledge about the real world. We run at world scale using Google Flume and Spanner.
+
+  \begin{itemize}
+    \begin{item}
+    Designed key APIs of the system allowing flexible execution of client code.
+    \end{item}
+    \begin{item}
+    Designed and implemented the approach to spatial bucketing for running geospatial processing in a massively parallel way.
+    \end{item}
+    \begin{item}
+    Work with product management and partner teams to set the product and technical strategy for GeoTracker. Define the plan and milestones for the team.
+    \end{item}
+    \begin{item}
+    Designed and implemented an efficient approach to spatial clustering to save significant processing time with improved cluster quality over the previous method.
+    \end{item}
+  \end{itemize}
+
+%For more information on the broader effort, see: \href{https://ai.googleblog.com/2017/05/updating-google-maps-with-deep-learning.html}{https://ai.googleblog.com/2017/05/updating-google-maps-with-deep-learning.html}
+
+\end{item}
+\begin{item}
+	\textbf{Chrome Team - Pepper \& Native Client SWE} (2013-2015)\\
+  Designed, implemented, and maintained several cross-platform APIs for the Pepper Plugin API (PPAPI), which allowed plugins like Adobe Flash as well as Native Client applications to interact with Chrome and the operating system securely and efficiently. Informally led Pepper Team 2014-2015.
+  \begin{itemize}
+  \begin{item}
+  Added key features to the API, including asynchronous and synchronous communication and thread-safety, in a secure and cross-platform way.
+  \end{item}
+  \begin{item}
+  Co-inventor on a patent for Asynchronous Message Passing: \href{https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9128702}{US-9128702-B2}.
+  \end{item}
+  \begin{item}
+  Ported id Software's Quake to Native Client (\href{https://github.com/davemichael/NaCl-Quake}{github.com/davemichael/NaCl-Quake})
+  \end{item}
+  \end{itemize}
+\end{item}
+\end{itemize}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{Sandia National Laboratories} & June 2001 - May 2010\\
+Senior Member of the Technical Staff &\\
+\end{tabular*}
+\begin{itemize}
+		\begin{item}\href{https://www.sandia.gov/labnews/2007/03/02/070302-2/}{\textbf{ICADS}}
+	\begin{itemize}
+			\begin{item}
+	\textbf{Software Engineer} - Owner of network communication code and distributed observer pattern implementation.
+			\end{item}
+\begin{item}
+\textbf{Implementation Architect} - Led adoption of automated unit testing, static analysis, code review.
+\end{item}
+	\end{itemize}
+\end{item}
+\begin{item}
+\textbf{Principal Investigator}
+  \begin{itemize}
+  \begin{item}
+  Laboratory Directed Research and Development Project on Online Scheduling Algorithms for Remote Sensing.
+  \end{item}
+  \begin{item}
+  Net-Centric Prototype - Led a small team which developed a real-time geospatial information system using Google Earth.
+  \end{item}
+\end{itemize}
+\end{item}
+\end{itemize}
+
+\begin{multicols}{2}
+
+\subsection*{Skills}
+\begin{itemize}
+  \begin{item}
+	  \Cpp, Python, JavaScript, Java, C, Rust
+  \end{item}
+  \begin{item}
+	  Machine Learning, Computer Vision
+  \end{item}
+  \begin{item}
+	  Object-Oriented Design \& Development, Design Patterns
+  \end{item}
+  \begin{item}
+	  Distributed \& Concurrent Programming
+  \end{item}
+  \begin{item}
+	  Linux, Windows, MacOS
+  \end{item}
+\end{itemize}
+\columnbreak
+\noindent
+
+\subsection*{Miscellaneous}
+\begin{itemize}
+	\item{Conducted over 200 Google SWE interviews.}
+	\item{Facilitator for Mentor Training at Google.}
+	\item{\href{https://bugs.chromium.org/u/dmichael@chromium.org/updates}{Former Chromium browser committer}}
+	\item{Contributor to \href{https://trac.webkit.org/search?q=dmichael&noquickjump=1&changeset=on&wiki=on}{WebKit}, \href{https://www.dre.vanderbilt.edu/~schmidt/ACE-members.html}{TAO CORBA}, and \href{https://weka.sourceforge.io/doc.packages/ensembleLibrary/weka/classifiers/meta/EnsembleSelection.html}{Weka ML}}
+  \item{Lead singer and guitar player for rock band \href{http://voidstarband.com}{``void*''}}
+\end{itemize}
+
+\end{multicols}
+
+\subsection*{Education}
+\begin{itemize}
+\begin{item}
+  \textbf{M.Eng. in Computer Science}, Cornell University 2006
+	\\
+	Computer Vision, Machine Learning, Algorithms and Data Structures.
+\end{item}
+\begin{item}
+  \textbf{B.S. in Computer Science} (Mathematics minor), Denison University 2001\\
+	Machine Learning, Operating Systems, Software Engineering.
+\end{item}  
+\end{itemize}
+\pagenumbering{gobble}
+\end{document}
